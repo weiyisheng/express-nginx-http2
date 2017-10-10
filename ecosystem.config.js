@@ -7,7 +7,7 @@ module.exports = {
 
     // First application
     {
-      name      : "http2",
+      name      : "express-http2",
       script    : "./server.js",
       env: {
         COMMON_VARIABLE: "true"
@@ -28,7 +28,7 @@ module.exports = {
       host : "37.139.22.91",
       ref  : "origin/master",
       repo : "git@github.com:weiyisheng/express-nginx-http2.git",
-      path : "/var/www/production",
+      path : "/var/www/express-http2",
       "post-deploy" : "yarn install && pm2 startOrRestart ecosystem.config.js --env production"
     },
     // dev : {
